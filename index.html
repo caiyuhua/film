@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>猫眼</title>
+    <meta id="vp" name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+    <!-- <link rel="stylesheet" type="text/css" href=""> -->
+
+    <script type="text/javascript">
+        var vp = 1/window.devicePixelRatio;
+        document.getElementById("vp").content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no".replace(/1\.0/g,vp);
+
+        var rempx=document.documentElement.clientWidth/7.5;
+        var ad=document.getElementsByTagName("html")[0].style.fontSize=rempx+"px";
+        console.log(ad);
+    </script>
+
+
+
+  </head>
+  <body>
+    <div id="box">
+      
+      
+    </div>
+    <script src="/dist/index.bundle.js"></script>
+
+    
+  </body>
+</html>
