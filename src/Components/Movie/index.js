@@ -11,7 +11,7 @@ class Movie extends Component{
 	render() {
 		return (
 
-			<div>
+			<div id="movie">
 
 					Movie
 			</div>

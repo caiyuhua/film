@@ -11,7 +11,7 @@ class Cinema extends Component{
 	render() {
 		return (
 
-			<div>
+			<div id="cinema">
 
 					Cinema
 			</div>

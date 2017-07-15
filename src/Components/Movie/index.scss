@@ -1,15 +1,8 @@
-#nowplaying{
-	ul{
-		li{
-			overflow: hidden;
-
-			padding:px2rem(10px);
-			img{
-				float: left;
-				width: px2rem(10px);
-			}
-
-
-		}
+$ui-width: 750px;
+	@function px2rem($px) {
+	    @return $px/$ui-width*7.5rem;
 	}
+	
+#movie{
+
 }
