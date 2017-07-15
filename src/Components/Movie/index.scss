@@ -1,0 +1,15 @@
+#nowplaying{
+	ul{
+		li{
+			overflow: hidden;
+
+			padding:px2rem(10px);
+			img{
+				float: left;
+				width: px2rem(10px);
+			}
+
+
+		}
+	}
+}

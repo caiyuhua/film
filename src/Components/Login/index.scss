@@ -1,0 +1,11 @@
+$ui-width: 750px;
+	@function px2rem($px) {
+	    @return $px/$ui-width*7.5rem;
+	}
+
+#login{
+	width:100%;
+	padding-top:px2rem(94px);
+	font-size:30px;
+}
+

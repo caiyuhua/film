@@ -1,0 +1,54 @@
+$ui-width: 750px;
+	@function px2rem($px) {
+	    @return $px/$ui-width*7.5rem;
+	}
+
+#home{
+	padding-top:px2rem(45px);
+
+	.taban{
+		width: 100%;
+		height:px2rem(80px);
+		line-height: px2rem(80px);
+		border-bottom: 8px solid #ccc;
+		font-size:px2rem(28px);
+		display: flex;
+		li{
+			flex:1;
+			text-align: center;
+			a{
+				text-decoration: none;
+				display: block;
+			}
+		}
+
+
+
+	}
+
+
+	.nowplaying{
+		img{
+			width: 100%;
+		}
+	}
+}
+
+
+.selected{
+	color:#e54847;
+	border-bottom:8px solid;
+	animation:lisamove 1s both;
+}
+
+@keyframes lisamove{
+	from{
+		border-bottom:0;
+		
+	}
+
+	to{
+		border-bottom:50%;
+		
+	}
+}
