@@ -10,6 +10,9 @@ import My from "./Components/My/index";
 import Movie from "./Components/Movie/index";
 import Cinema from "./Components/Cinema/index";
 import Position from "./Components/Position/index";
+import Detailc from "./Components/Detailc/index";
+import Detailm from "./Components/Detailm/index";
+
 
 
 import {
@@ -37,10 +40,11 @@ const router = (
 						<Route path="/my/login" component={Login}/>
 					</My>
 				}/>
-
 				
 				<Route path="/position" component={Position}/>
 				<Route path="/regist" component={Regist}/>
+				<Route path="/detailc/:cinemaID" component={Detailc}/>
+				<Route path="/detailm/:movieID" component={Detailm}/>
 				<Redirect from="/" to="/home"/>
 			</Switch>
 		</App>

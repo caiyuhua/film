@@ -5,15 +5,16 @@ $ui-width: 750px;
 	
 #movie{
 		width:100%;
-		font-size:23px;
+		font-size:22px;
 		font-weight: 100;
-		color: #222;
+		
 
 	ul.playing{
 		display:flex;
 		flex-direction: column;
 		width: 98%;
 		margin:10px auto;
+		color: #666;
 
 		li{
 			flex: 1;
@@ -26,6 +27,9 @@ $ui-width: 750px;
 
 			.buy{
 				margin-left:10px;
+				div{
+					margin:5px 0;
+				}
 			}
 
 		}
@@ -34,6 +38,28 @@ $ui-width: 750px;
 			font-size:28px;
 			font-weight: 100;
 			color: #222
+		}
+
+
+		.btn{
+			width: 50%;
+			float: right;
+			
+			height: 100%;
+			a{
+				height: 100%;
+				
+				text-align: center;
+				float: right;
+				width: px2rem(90px);
+				height: px2rem(50px);
+				line-height:px2rem(50px);
+				color: #fff;
+				background:#EF4238;
+				border-radius: 5px;
+				margin-bottom: 0;
+				margin-right:px2rem(50px);
+			}
 		}
 
 	}
