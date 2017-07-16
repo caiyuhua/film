@@ -20,6 +20,8 @@ $ui-width: 750px;
 			flex: 1;
 			border-bottom: 1px solid #ccc;
 			padding: 10px 0;
+			position: relative;
+
 			img{
 				float: left;
 				width: 130px;
@@ -42,13 +44,12 @@ $ui-width: 750px;
 
 
 		.btn{
-			width: 50%;
-			float: right;
-			
+			width: 30%;
+			float: right;			
 			height: 100%;
 			a{
+				position:absolute;
 				height: 100%;
-				
 				text-align: center;
 				float: right;
 				width: px2rem(90px);
@@ -57,8 +58,17 @@ $ui-width: 750px;
 				color: #fff;
 				background:#EF4238;
 				border-radius: 5px;
-				margin-bottom: 0;
+				bottom: px2rem(30px);
+				right: 0;
 				margin-right:px2rem(50px);
+			}
+
+			div{
+				margin-top: px2rem(10px);
+				float: right;
+				margin-right:px2rem(50px);
+				color: #FFB400;
+				font-size: 26px;
 			}
 		}
 

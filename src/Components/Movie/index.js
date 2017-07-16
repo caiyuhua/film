@@ -8,14 +8,17 @@ class Movie extends Component{
 	constructor(props) {
 		super(props);
 		this.state = {
-			playinglist:[]
+			playinglist:[],
+			total:0,
+			currentpage:0,
+			hasMore:true
 		}
 		
 	}
 
 	componentDidMount(){
 		axios.get("./data.json").then(res=>{
-			console.log(res.data.nowplaying)
+			console.log(res.data.nowplaying[0]);
 			this.setState({
 				playinglist:res.data.nowplaying
 			})
@@ -50,7 +53,7 @@ class Movie extends Component{
 										<div>{item.totaytime}</div>
 									</div>
 									<div className="btn">
-										<div></div>
+										<div>{item.fen}分</div>
 										<a>购票</a>
 									</div>
 								</li>
@@ -65,6 +68,8 @@ class Movie extends Component{
 
 	handleLoadMore(){
 		console.log('请求数据')
+
+
 	}
 }
 

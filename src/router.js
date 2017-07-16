@@ -12,7 +12,8 @@ import Cinema from "./Components/Cinema/index";
 import Position from "./Components/Position/index";
 import Detailc from "./Components/Detailc/index";
 import Detailm from "./Components/Detailm/index";
-
+import LoginEmail from "./Components/LoginEmail/index";
+import LoginTel from "./Components/LoginTel/index";
 
 
 import {
@@ -20,7 +21,7 @@ import {
 	Route,
 	Switch, //只匹配第一个符路径条件的子组件
 	Redirect
-} from "react-router-dom"
+} from "react-router-dom";
 
 const router = (
 	<Router>
@@ -37,7 +38,14 @@ const router = (
 				}/>
 				<Route path="/my" render={()=>
 					<My>
-						<Route path="/my/login" component={Login}/>
+						<Route path="/my/login" render={()=>
+							<Login>
+								<Switch>
+									<Route path="/my/loginemail" component={LoginEmail}/>
+									<Route path="/my/logintel" component={LoginTel}/>
+								</Switch>
+							</Login>
+						}/>
 					</My>
 				}/>
 				
@@ -45,6 +53,7 @@ const router = (
 				<Route path="/regist" component={Regist}/>
 				<Route path="/detailc/:cinemaID" component={Detailc}/>
 				<Route path="/detailm/:movieID" component={Detailm}/>
+
 				<Redirect from="/" to="/home"/>
 			</Switch>
 		</App>

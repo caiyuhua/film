@@ -6,14 +6,11 @@ $ui-width: 750px;
 #login{
 	width:100%;
 	padding-top:px2rem(50px);
-	
-	header{
-		height: px2rem(105px);
-		background: #f7f7f7;
-		color:#999;
-	}
-	.iconfont{
-		font-size:50px;
+	font-size:30px;
+
+
+	.myselected{
+		color: #e54847;
 	}
 }
 

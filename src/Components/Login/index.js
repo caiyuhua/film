@@ -1,6 +1,10 @@
 import React,{Component} from "react";
 import "./index.scss";
 import "../../assets/iconfont/iconfont.css";
+import {
+	NavLink
+} from "react-router-dom";
+
 
 class Login extends Component{
 	constructor(props){
@@ -12,16 +16,16 @@ class Login extends Component{
 		return (
 
 			<div id="login">
-				<header>
-					<div><i className="iconfont icon-back"></i></div>
-					<div><h3>我的订单</h3></div>
-					<div></div>
-				</header>
-
 				<ul>
-					<li></li>
-					<li></li>
+					<li>
+						<NavLink to="/my/loginemail" activeClassName="selected">美团账号登录</NavLink>
+					</li>
+					<li>
+						<NavLink to="/my/logintel" activeClassName="selected">手机验证登录</NavLink>
+					</li>
 				</ul>
+
+				{this.props.children}
 			</div>
 
 		)
