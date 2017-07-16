@@ -1,6 +1,11 @@
 import React,{Component} from "react";
 import "./index.scss";
 import My from "../My/index";
+import {
+	NavLink
+} from "react-router-dom";
+
+
 
 class App extends Component{
 	constructor(props){
@@ -16,13 +21,9 @@ class App extends Component{
 
 			<div id="app">
 				<header>
-					<div className="position" onClick={
-						()=>{
-							this.setState({
-								isShow:!this.state.isShow
-							})
-						}
-					}>大连</div>
+					<div className="position">
+						<NavLink to="/position" activeClassName="myselected">大连</NavLink>
+					</div>
 					<div className="title">猫眼电影</div>
 					<div></div>
 				</header>

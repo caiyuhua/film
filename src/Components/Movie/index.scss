@@ -4,5 +4,44 @@ $ui-width: 750px;
 	}
 	
 #movie{
+		width:100%;
+		font-size:23px;
+		font-weight: 100;
+		color: #222;
+
+	ul.playing{
+		display:flex;
+		flex-direction: column;
+		width: 98%;
+		margin:10px auto;
+
+		li{
+			flex: 1;
+			border-bottom: 1px solid #ccc;
+			padding: 10px 0;
+			img{
+				float: left;
+				width: 130px;
+			}
+
+			.buy{
+				margin-left:10px;
+			}
+
+		}
+
+		h3{
+			font-size:28px;
+			font-weight: 100;
+			color: #222
+		}
+
+	}
+
+
+	.left{
+		float: left;
+	}
 
 }
+
