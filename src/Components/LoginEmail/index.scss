@@ -2,82 +2,75 @@ $ui-width: 750px;
 	@function px2rem($px) {
 	    @return $px/$ui-width*7.5rem;
 	}
-	
-#movie{
-		width:100%;
-		font-size:22px;
-		font-weight: 100;
-		
 
-	ul.playing{
-		display:flex;
-		flex-direction: column;
-		width: 98%;
-		margin:10px auto;
-		color: #666;
+#loginemail{
+	font-size:30px;
+	text-align:center;
+	background:#f8f8f8;
 
-		li{
-			flex: 1;
+	.backgroundWh{
+		background:#fff;
+	}
+
+	.userMsg{
+		width: 80%;
+		margin:0 auto;
+		padding:0 px2rem(30px);
+		background:#fff;
+
+		.msgIn{
+			text-align: left;
+			width: 100%;
+			height:px2rem(100px);
 			border-bottom: 1px solid #ccc;
-			padding: 10px 0;
-			position: relative;
 
-			img{
-				float: left;
-				width: 130px;
-			}
-
-			.buy{
-				margin-left:10px;
-				div{
-					margin:5px 0;
-				}
-			}
-
-		}
-
-		h3{
-			font-size:28px;
-			font-weight: 100;
-			color: #222
-		}
-
-
-		.btn{
-			width: 30%;
-			float: right;			
-			height: 100%;
-			a{
-				position:absolute;
+			input{
 				height: 100%;
-				text-align: center;
-				float: right;
-				width: px2rem(90px);
-				height: px2rem(50px);
-				line-height:px2rem(50px);
-				color: #fff;
-				background:#EF4238;
-				border-radius: 5px;
-				bottom: px2rem(30px);
-				right: 0;
-				margin-right:px2rem(50px);
-			}
-
-			div{
-				margin-top: px2rem(10px);
-				float: right;
-				margin-right:px2rem(50px);
-				color: #FFB400;
+				outline: none;
+				border:0;
 				font-size: 26px;
 			}
 		}
-
 	}
 
 
-	.left{
-		float: left;
-	}
+
+		button{
+			display: inline-block;
+			margin-top: px2rem(30px);
+			background: rgb(223, 45, 45);
+			border-radius:10px;
+			width: 90%;
+			height: px2rem(80px);
+			font-size: 30px;
+			color: #fff;
+		}
+
+		.submit{
+
+			.regNow{
+				margin-top: px2rem(30px);
+				text-decoration: none;
+				font-size: 23px;
+				color: #df2d2d;							
+			}
+
+			div{
+					height: px2rem(70px);
+				}
+
+			.left{
+				float: left;
+				margin-left: px2rem(60px);
+			}
+			.right{
+				float: right;
+				margin-right: px2rem(60px);
+			}
+
+			.telphone{
+				padding:px2rem(30px) 0;
+			}
+		}
 
 }
-

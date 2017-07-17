@@ -40,20 +40,18 @@ const router = (
 					<My>
 						<Route path="/my/login" render={()=>
 							<Login>
-								<Switch>
-									<Route path="/my/loginemail" component={LoginEmail}/>
-									<Route path="/my/logintel" component={LoginTel}/>
-								</Switch>
+								<Route path="/my/login/loginemail" component={LoginEmail}/>
+								<Route path="/my/login/logintel" component={LoginTel}/>
+								<Redirect from="/my/login" to="/my/login/loginemail"/>
 							</Login>
 						}/>
 					</My>
-				}/>
-				
+				}/>				
 				<Route path="/position" component={Position}/>
 				<Route path="/regist" component={Regist}/>
 				<Route path="/detailc/:cinemaID" component={Detailc}/>
 				<Route path="/detailm/:movieID" component={Detailm}/>
-
+				
 				<Redirect from="/" to="/home"/>
 			</Switch>
 		</App>

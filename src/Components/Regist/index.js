@@ -9,11 +9,9 @@ class Regist extends Component{
 
 	render(){
 		return (
-
-			<div>
-				Regist
+			<div id="regist">
+				
 			</div>
-
 		)
 	}
 

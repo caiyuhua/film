@@ -18,7 +18,7 @@ class LoginTel extends Component{
 		return (
 
 			<div id="logintel">
-			assafdsa
+				
 			</div>
 		)
 	}
