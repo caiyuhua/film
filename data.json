@@ -155,5 +155,111 @@
 			"addres":"沙河口区数码广场南段13号锦辉商城东财书香苑店"
 		}
 
+	],
+
+	"detailPage":{
+            "111":{
+			"id":111,
+			"name":"万达国际影城(高新园店)",		
+			"imgUrl":"http://p0.meituan.net/movie/3534d263e6bc6f85412a147c4aaf4e46667953.jpg.webp@128w_180h",
+			"addres":"甘井子区高新园黄浦路500号万达广场4层",
+			"data":"7月17日"
+		
+
+		
+		},
+
+		"222":{
+			"id":222,
+			"name":"米高梅国际影城(高新店)",
+			"price":"28",
+			"imgUrl":"http://p0.meituan.net/movie/408f53c86382da0b959941904c01c32b291291.jpg@128w_180h",
+			"addres":"甘井子区高新园区黄浦路517号(锦辉购物广场5层)",
+			"distance":"1200m",
+			"data":"7月17日"
+		},
+
+
+		"333":{
+			"id":333,
+			
+			"name":"华晨影城(软件园店)",
+			"price":"23",
+			"addres":"沙河口区数码广场南段13号锦辉商城东财书香苑店",
+			"imgUrl":"http://p0.meituan.net/movie/b54ff6d86280f53abde1c46b03f6dea1977483.jpg@128w_180h",
+			"distance":"7200m",
+			"data":"7月17日"
+		},
+
+		"444":{
+			"id":444,
+			"name":"华晨影城(软件园店)",
+			"price":"23",
+			"addres":"沙河口区数码广场南段13号锦辉商城东财书香苑店",
+			"imgUrl":"http://p1.meituan.net/movie/0dc3be00bb030c6c871496ec74a168d52823468.jpg.webp@128w_180h",
+			"distance":"200km",
+			"data":"7月17日"
+		},
+
+
+		"555":{
+			"id":555,
+			"name":"华晨影城(软件园店)",
+			"price":"23",
+			"addres":"沙河口区数码广场南段13号锦辉商城",
+			"imgUrl":"http://p0.meituan.net/movie/14d327102710b25c4ad4acf33064b065104228.jpg@128w_180h",
+			"distance":"280.6m",
+			"data":"7月17日"
+		}
+
+
+	},
+	"time":[
+         {   "id":1,
+             "datatime":"10:15",
+             "endtime":"12:10结束",
+             "lange":"国语IMAX3D",
+             "ads":"1号厅-农行IMAX厅(大)",
+             "ticketPrice":"63.5"
+
+
+         },
+         {   "id":2,
+             "datatime":"11:15",
+             "endtime":"13:10结束",
+             "lange":"国语3D",
+             "ads":"4号厅-4DX影厅",
+             "ticketPrice":"39"
+
+
+         },
+		{   "id":3,
+		             "datatime":"12:35",
+		             "endtime":"14:19结束",
+		             "lange":"国语3D",
+		             "ads":"1号厅",
+		             "ticketPrice":"33"
+
+
+		         },
+        {   "id":4,
+             "datatime":"13:15",
+             "endtime":"15:10结束",
+             "lange":"国语IMAX3D",
+             "ads":"2号- 别克厅",
+             "ticketPrice":"43.5"
+
+
+         },
+          {   "id":5,
+             "datatime":"15:15",
+             "endtime":"17:10结束",
+             "lange":"国语3D",
+             "ads":"1号厅-农行IMAX厅(大)",
+             "ticketPrice":"23.5"
+
+
+         }
+   
 	]
 }
