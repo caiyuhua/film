@@ -5,6 +5,7 @@
 			"name":"悟空传",
 			"gut":"剧情,动作,奇幻",
 			"actor":"主演:彭于晏,倪妮,余文乐",
+			"fen":"7.6",
 			"imgUrl":"http://p0.meituan.net/movie/3534d263e6bc6f85412a147c4aaf4e46667953.jpg.webp@128w_180h",
 			"totaytime":"今天176家影院放映262场"
 		},
@@ -14,6 +15,7 @@
 			"name":"神偷奶爸",
 			"gut":"剧情,动作,奇幻",
 			"actor":"主演:彭于晏,倪妮,余文乐",
+			"fen":"8.8",
 			"imgUrl":"http://p0.meituan.net/movie/e4aa7abb6ef5fbe695174063ac6cc0921246361.jpg@128w_180h",
 			"totaytime":"今天176家影院放映263场"
 		},
@@ -23,6 +25,7 @@
 			"name":"喵星人",
 			"gut":"剧情,动作,奇幻",
 			"actor":"主演:彭于晏,倪妮,余文乐",
+			"fen":"8.3",
 			"imgUrl":"http://p1.meituan.net/movie/0dc3be00bb030c6c871496ec74a168d52823468.jpg.webp@128w_180h",
 			"totaytime":"今天176家影院放映632场"
 		},
@@ -32,6 +35,7 @@
 			"name":"大护法",
 			"gut":"剧情,动作,奇幻",
 			"actor":"主演:彭于晏,倪妮,余文乐",
+			"fen":"7.7",
 			"imgUrl":"http://p0.meituan.net/movie/14d327102710b25c4ad4acf33064b065104228.jpg@128w_180h",
 			"totaytime":"今天176家影院放映2632场"
 		},
@@ -41,6 +45,7 @@
 			"name":"青木男高",
 			"gut":"剧情,动作,奇幻",
 			"actor":"主演:彭于晏,倪妮,余文乐",
+			"fen":"8.5",
 			"imgUrl":"http://p0.meituan.net/movie/f633e97639c3697725a2bd2d3b491bff508139.jpg@128w_180h",
 			"totaytime":"今天176家影院放映2632场"
 		},
@@ -50,6 +55,7 @@
 			"name":"京城81号",
 			"gut":"剧情,动作,奇幻",
 			"actor":"主演:彭于晏,倪妮,余文乐",
+			"fen":"8.2",
 			"imgUrl":"http://p0.meituan.net/movie/b54ff6d86280f53abde1c46b03f6dea1977483.jpg@128w_180h",
 			"totaytime":"今天176家影院放映2632场"
 		},
@@ -59,6 +65,7 @@
 			"name":"深夜食堂",
 			"gut":"剧情,动作,奇幻",
 			"actor":"主演:彭于晏,倪妮,余文乐",
+			"fen":"8.4",
 			"imgUrl":"http://p1.meituan.net/movie/53b25618e98f0ff82f633c31a0d8e78a463347.jpg@128w_180h",
 			"totaytime":"今天176家影院放映2632场"
 		},
@@ -68,11 +75,44 @@
 			"name":"父子雄兵",
 			"gut":"剧情,动作,奇幻",
 			"actor":"主演:彭于晏,倪妮,余文乐",
+			"fen":"5.8",
 			"imgUrl":"http://p0.meituan.net/movie/408f53c86382da0b959941904c01c32b291291.jpg@128w_180h",
 			"totaytime":"今天176家影院放映2632场"
 		}
 
 	],
+
+
+	"detail":{
+		"111":{
+			"url":"http://p0.meituan.net/movie/3534d263e6bc6f85412a147c4aaf4e46667953.jpg@177w_249h.webp",
+			"id":"111",
+			"name":"悟空传",
+			"gut":"剧情,动作,奇幻",
+			"fen":"7.6",
+			"release":"2017-07-13大陆上映"
+		},
+
+		"222":{
+			"url":"http://p1.meituan.net/movie/e4aa7abb6ef5fbe695174063ac6cc0921246361.jpg@177w_249h.webp",
+			"name":"神偷奶爸",
+			"gut":"剧情,动作,奇幻",
+			"actor":"主演:彭于晏,倪妮,余文乐",
+			"fen":"8.8",
+			"release":"2017-07-07大陆上映"
+		},
+
+
+		"333":{
+			"url":"http://p0.meituan.net/movie/0dc3be00bb030c6c871496ec74a168d52823468.jpg@177w_249h.webp",
+			"name":"喵星人",
+			"gut":"剧情,动作,奇幻",
+			"fen":"8.3",
+			"release":"2017-07-14大陆上映"
+		}
+
+
+	},
 
 
 
