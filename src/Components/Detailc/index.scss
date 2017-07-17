@@ -3,3 +3,47 @@ $ui-width: 750px;
 	    @return $px/$ui-width*7.5rem;
 	}
 	
+#article{
+	div{
+		display: flex;
+
+	}
+   font-size: 40px;
+   color: #333;
+   margin-top: px2rem(70px);
+   p{
+   	font-size: 30px;
+   	padding-top: px2rem(30px);
+   }
+   i{
+   	float:right;
+   	color: green;
+   	font-size: 40px;
+   	margin-left:  px2rem(150px);
+   }
+   #slide{
+   	background:#333;
+    height:px2rem(330px);
+   }
+   .slideTitle{
+   height:px2rem(90px);
+   	background:pink;
+
+   }
+   #dtime{
+      padding-left:px2rem(50px);
+ 
+
+   }
+   #times{
+   	font-size: 20px;
+      .timedata{
+       height:px2rem(300px);
+       line-height: px2rem(300px);
+      background:#ff0;
+       border-bottom: 1px  red;
+      padding-left:px2rem(50px); 
+      }   
+
+   }
+}
