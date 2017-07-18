@@ -14,6 +14,8 @@ import Detailc from "./Components/Detailc/index";
 import Detailm from "./Components/Detailm/index";
 import LoginEmail from "./Components/LoginEmail/index";
 import LoginTel from "./Components/LoginTel/index";
+import LoginAfter from "./Components/LoginAfter/index";
+
 
 
 import {
@@ -51,7 +53,8 @@ const router = (
 				<Route path="/regist" component={Regist}/>
 				<Route path="/detailc/:cinemaID" component={Detailc}/>
 				<Route path="/detailm/:movieID" component={Detailm}/>
-				
+				<Route path="/longinafter" component={LoginAfter}/>
+				longinafter
 				<Redirect from="/" to="/home"/>
 			</Switch>
 		</App>

@@ -1,0 +1,31 @@
+$ui-width: 750px;
+	@function px2rem($px) {
+	    @return $px/$ui-width*7.5rem;
+	}
+
+#loginAfter{
+	padding-top:px2rem(30px);
+	font-size:26px;
+	.top{
+		width: 100%;
+		height: px2rem(100px);
+		display: flex;
+		line-height:px2rem(100px);
+		background:#f7f7f7;
+		color: #999;
+
+		div{
+			flex: 1;
+			text-align: center;
+		}
+
+		.icon-back{
+			font-size: 50px;
+			margin-left: px2rem(20px);
+			float: left;
+		}
+	}
+}
+
+
+

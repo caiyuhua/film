@@ -32,7 +32,9 @@ class LoginEmail extends Component{
 					</div>
 				</div>
 				<div className="submit">
-					<button>登录</button>
+					<button onClick={()=>{
+						this.props.history.push('/longinafter')
+					}}>登录</button>
 					<div>
 						<NavLink to="/regist" activeClassName="active" className="regNow left">立即注册</NavLink>
 						<NavLink to="/help" activeClassName="active" className="regNow right" >找回密码</NavLink>
@@ -42,6 +44,7 @@ class LoginEmail extends Component{
 			</div>
 		)
 	}
+
 
 }
 
