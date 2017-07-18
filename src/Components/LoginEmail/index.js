@@ -41,11 +41,11 @@ class LoginEmail extends Component{
 			<div id="loginemail">
 				<div className="backgroundWh">
 					<div className="userMsg">
-						<div className="msgIn email" onBlur={this.handleBlur.bind(this)}>
+						<div className="msgIn email" onBlur={this.handleBlura.bind(this)}>
 							<input className="username" type="text" placeholder="账号名/手机号/Email" ref ="username"/>					
 							<span></span>
 						</div>
-						<div className="msgIn mima" onBlur={this.handleBlur.bind(this)}>
+						<div className="msgIn mima" onBlur={this.handleBlurb.bind(this)}>
 							<input className="password" type="password" placeholder="请输入您的密码" ref = "psw"/>					
 							<span></span>
 						</div>
@@ -64,26 +64,29 @@ class LoginEmail extends Component{
 	}
 
 		//表单验证
-		handleBlur(){
+		handleBlura(){
 			var username = document.querySelector('.username').value;
-			var password = document.querySelector('.password').value;
-			var regUser = /^[a-zA-z][a-zA-Z0-9_]{2,9}$/;
-			var regPass = /\d[6-8]/;
-
-			var spanUser = document.querySelector('.email span');
-			var spanPass = document.querySelector('.mima span');
+			var regUser = /^[a-zA-z][a-zA-Z0-9_]{2,9}$/;		
+			var spanUser = document.querySelector('.email span');			
 			var email = document.querySelector('.email');
 			var mima = document.querySelector('.mima');
 
-
-			if(regUser.test(username)){
-				
+			if(regUser.test(username)){				
 				spanUser.innerHTML = "正确";
 				mima.style.borderBottom = 0; 
 			}else{
 				spanUser.innerHTML = "格式不对";
 				email.style.borderBottom = '1px solid red'; 
 			}
+			
+		}
+
+
+		handleBlurb(){
+			var password = document.querySelector('.password').value;
+			var regPass = /\d[6-8]/;
+			var spanPass = document.querySelector('.mima span');
+			var mima = document.querySelector('.mima');
 
 			if(regPass.test(password)){
 				
@@ -94,11 +97,11 @@ class LoginEmail extends Component{
 				mima.style.borderBottom = '1px solid red'; 
 			}
 
-			if (regUser.test(username) && regPass.test(password)) {
-				this.setState({
-					regYanZheng:true
-				})
-			}
+			// if (regUser.test(username) && regPass.test(password)) {
+			// 	this.setState({
+			// 		regYanZheng:true
+			// 	})
+			// }
 		}
 
 
