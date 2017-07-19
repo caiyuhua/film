@@ -15,7 +15,8 @@ import Detailm from "./Components/Detailm/index";
 import LoginEmail from "./Components/LoginEmail/index";
 import LoginTel from "./Components/LoginTel/index";
 import LoginAfter from "./Components/LoginAfter/index";
-
+import {Provider} from "react-redux"
+import store from "./Redux/Store/index";
 
 
 import {
@@ -25,8 +26,7 @@ import {
 	Redirect
 } from "react-router-dom";
 
-import {Provider} from "react-redux"
-import store from "./Redux/Store/index";
+
 const router = (
 	<Provider store={store}>
 	<Router>
@@ -57,7 +57,7 @@ const router = (
 				<Route path="/detailc/:cinemaID" component={Detailc}/>
 				<Route path="/detailm/:movieID" component={Detailm}/>
 				<Route path="/longinafter" component={LoginAfter}/>
-				longinafter
+				
 				<Redirect from="/" to="/home"/>
 			</Switch>
 		</App>

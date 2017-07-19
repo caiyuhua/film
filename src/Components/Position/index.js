@@ -89,6 +89,7 @@ class Position extends Component{
 		})
 	}
 }
+
 export default connect(
 	null,
 	{
