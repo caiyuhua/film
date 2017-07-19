@@ -46,6 +46,9 @@ $ui-width: 750px;
 			
 
 		}
+		#ps{
+			display: none;
+		}
 	}
 
 #ck{
@@ -59,4 +62,23 @@ $ui-width: 750px;
 	width:100%;
 	height:px2rem(60px);
 	font-size:30px;
+
+}
+#yanzheng{
+	font-size:20px;
+	color:red;
+	opacity:0;
+}
+#send{
+	width:100%;
+	height:px2rem(60px);
+	font-size:30px;
+	display:none;
+
+}
+#zh{
+	font-size:20px;
+	color:red;
+	opacity:0;
+	margin-bottom:px2rem(10px);
 }
