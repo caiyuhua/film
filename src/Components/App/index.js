@@ -4,7 +4,7 @@ import My from "../My/index";
 import {
 	NavLink
 } from "react-router-dom";
-
+import Header from "./Header"
 
 
 class App extends Component{
@@ -18,16 +18,8 @@ class App extends Component{
 
 	render(){
 		return (
-
 			<div id="app">
-				<header>
-					<div className="position">
-						<NavLink to="/position" activeClassName="myselected">大连</NavLink>
-					</div>
-					<div className="title">猫眼电影</div>
-					<div></div>
-				</header>
-
+				<Header></Header>
 				<div className={this.state.isShow?"show":"hide"}>
 					<ul className="dalian">
 

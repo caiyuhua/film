@@ -25,7 +25,10 @@ import {
 	Redirect
 } from "react-router-dom";
 
+import {Provider} from "react-redux"
+import store from "./Redux/Store/index";
 const router = (
+	<Provider store={store}>
 	<Router>
 		<App> {/*自己写的根组件*/}
 			<Switch>
@@ -48,16 +51,18 @@ const router = (
 							</Login>
 						}/>
 					</My>
-				}/>
+				}/>				
 				<Route path="/position" component={Position}/>
 				<Route path="/regist" component={Regist}/>
 				<Route path="/detailc/:cinemaID" component={Detailc}/>
 				<Route path="/detailm/:movieID" component={Detailm}/>
-				<Route path="/longinafter" component={LoginAfter}/>			
+				<Route path="/longinafter" component={LoginAfter}/>
+				longinafter
 				<Redirect from="/" to="/home"/>
 			</Switch>
 		</App>
 	</Router>
+	</Provider>
 )
 /*最外层的包装模块*/
 export default router;

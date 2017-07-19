@@ -3,7 +3,7 @@ import "./index.scss";
 import {
 	NavLink
 } from "react-router-dom";
-
+import {connect} from "react-redux";
 
 
 class Position extends Component{
@@ -11,7 +11,8 @@ class Position extends Component{
 		super(props);
 		this.state={
 			isShow:"hide",
-			currentIndex:"0"
+			currentIndex:"0",
+			currentNumber:"0",
 		}
 	}
 
@@ -21,19 +22,19 @@ class Position extends Component{
 				<ul id="_city">
 					<li data-index="0" onClick={this.aClick.bind(this)}>热门城市<i className="iconfont">&#xe6a6;</i></li>
 						<ul className={this.state.currentIndex=="0"?"show":"hide"}>
-						<li><NavLink to="/App" activeClassName="selected">北京</NavLink></li>
-						<li><NavLink to="/App" activeClassName="selected">上海</NavLink></li>
-						<li><NavLink to="/App" activeClassName="selected">深圳</NavLink></li>
-						<li><NavLink to="/App" activeClassName="selected">天津</NavLink></li>
-						<li><NavLink to="/App" activeClassName="selected">杭州</NavLink></li>
+						<li data-number="11" onClick={this.bClick.bind(this)}><NavLink to="/App" activeClassName="selected">北京</NavLink></li>
+						<li data-number="12" onClick={this.bClick.bind(this)}><NavLink to="/App" activeClassName="selected">上海</NavLink></li>
+						<li data-number="13" onClick={this.bClick.bind(this)}><NavLink to="/App" activeClassName="selected">深圳</NavLink></li>
+						<li data-number="14" onClick={this.bClick.bind(this)}><NavLink to="/App" activeClassName="selected">天津</NavLink></li>
+						<li data-number="15" onClick={this.bClick.bind(this)}><NavLink to="/App" activeClassName="selected">杭州</NavLink></li>
 						</ul>
 					<li data-index="1" onClick={this.aClick.bind(this)}>A<i className="iconfont">&#xe6a6;</i></li>
 						<ul className={this.state.currentIndex=="1"?"show":"hide"}>
-						<li><NavLink to="/App" activeClassName="selected">安阳</NavLink></li>
-						<li><NavLink to="/App" activeClassName="selected">安溪</NavLink></li>
-						<li><NavLink to="/App" activeClassName="selected">澳门</NavLink></li>
-						<li><NavLink to="/App" activeClassName="selected">安平</NavLink></li>
-						<li><NavLink to="/App" activeClassName="selected">安顺</NavLink></li>
+						<li data-number="21" onClick={this.bClick.bind(this)}><NavLink to="/App" activeClassName="selected">安阳</NavLink></li>
+						<li data-number="22" onClick={this.bClick.bind(this)}><NavLink to="/App" activeClassName="selected">安溪</NavLink></li>
+						<li data-number="23" onClick={this.bClick.bind(this)}><NavLink to="/App" activeClassName="selected">澳门</NavLink></li>
+						<li data-number="24" onClick={this.bClick.bind(this)}><NavLink to="/App" activeClassName="selected">安平</NavLink></li>
+						<li data-number="25" onClick={this.bClick.bind(this)}><NavLink to="/App" activeClassName="selected">安顺</NavLink></li>
 						</ul>
 					<li data-index="2" onClick={this.aClick.bind(this)}>B<i className="iconfont">&#xe6a6;</i></li>
 						<ul className={this.state.currentIndex=="2"?"show":"hide"}>
@@ -81,5 +82,21 @@ class Position extends Component{
 			currentIndex:ev.target.dataset.index
 		})
 	}
+	bClick(ev){
+		this.props.change(ev.target.innerHTML);
+		this.setState({
+			currentNumber:ev.target.dataset.number,
+		})
+	}
 }
-export default Position;
+export default connect(
+	null,
+	{
+		change:(city)=>{
+			return {
+				type:"WPCHANGE",
+				info:city
+			}
+		}
+	}
+	)(Position);
