@@ -3,7 +3,8 @@ import "./index.scss";
 import axios from "axios";
 import InfiniteScroll from 'react-infinite-scroller';
 import {
-	NavLink
+	NavLink,
+	browserHistory
 } from "react-router-dom";
 
 
@@ -114,11 +115,15 @@ class LoginEmail extends Component{
 			  	method: 'POST',
 			  	body: "username=" + this.refs.username.value+"&psw="+ this.refs.password.value
 			}).then(function(res){
-				return res.text();
-			}).then(function(data){
-				console.log(data);
+				return res.json();
+			}).then((data)=>{
+				console.log(data.msg);
+				if(data.code){
+					this.props.history.push('/longinafter');
+				}else{
+					alert('请检查您的账号和密码')
+				}
 				
-				// this.props.history.push('/home/movie');
 			})
 		}
 

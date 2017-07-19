@@ -20,10 +20,15 @@ class LoginAfter extends Component{
 						<NavLink to="/home/movie" activeClassName="selected"><i className="iconfont icon-back"></i></NavLink>
 					</div>
 					<div><h3 >悟空传</h3></div>
-					<div></div>
+					<div className="useradmin"></div>
 				</div>
 			</div>
 		)
+	}
+
+
+	componentDidMount() {
+		
 	}
 
 }

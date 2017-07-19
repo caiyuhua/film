@@ -48,13 +48,12 @@ const router = (
 							</Login>
 						}/>
 					</My>
-				}/>				
+				}/>
 				<Route path="/position" component={Position}/>
 				<Route path="/regist" component={Regist}/>
 				<Route path="/detailc/:cinemaID" component={Detailc}/>
 				<Route path="/detailm/:movieID" component={Detailm}/>
-				<Route path="/longinafter" component={LoginAfter}/>
-				longinafter
+				<Route path="/longinafter" component={LoginAfter}/>			
 				<Redirect from="/" to="/home"/>
 			</Switch>
 		</App>
