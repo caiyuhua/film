@@ -26,9 +26,9 @@ module.exports = {
                   host: 'm.maizuo.com',
                   changeOrigin:true
               },
-              "/api":"http://127.0.0.1/Thinkphp/public/"
+              "/Index":"http://127.0.0.1/test/public/"
 
-        }
+        }        
 
         /*
           在前端 发起 /v4/api/billboard/home请求
