@@ -1,29 +1,29 @@
 $ui-width: 750px;
-  @function px2rem($px) {
-      @return $px/$ui-width*7.5rem;
-  }
-  
+	@function px2rem($px) {
+	    @return $px/$ui-width*7.5rem;
+	}
+	
 #article{
-  div{
-    display: flex;
+	div{
+		display: flex;
 
-  }
+	}
    font-size: 40px;
    color: #333;
    margin-top: px2rem(70px);
    p{
-    font-size: 30px;
-    padding-top: px2rem(30px);
+   	font-size: 30px;
+   	padding-top: px2rem(30px);
    }
    i{
-    float:right;
-    color: green;
+   	float:right;
+   	color: green;
     width: px2rem(90px);
     height: px2rem(60px);
    line-height: px2rem(60px);
     border-left:3px solid #ccc;
-    font-size: 40px;
-    padding-left:px2rem(30px);
+   	font-size: 40px;
+   	padding-left:px2rem(30px);
    }
    #slide{
     width:100%;
@@ -57,7 +57,7 @@ $ui-width: 750px;
 
    }
    #times{
-    font-size: 20px;
+   	font-size: 20px;
     .timedata{
        height:px2rem(200px);
        border-bottom: 1px solid #ccc;

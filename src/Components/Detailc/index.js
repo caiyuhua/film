@@ -17,7 +17,8 @@ class Detailc extends Component{
 				looplist:[],
 				timelist:[],
 				numbeone:'悟空传',
-				grade:'8.3'
+				grade:'8.3',
+				playinglist:[]
 
 		
 		}
@@ -97,7 +98,7 @@ class Detailc extends Component{
 
 							<div className="slideTitle">
 							   <h5>{this.state.numbeone}</h5>
-							   <span>{this.state.grade}</span>
+							   <span id='a'>{this.state.grade}</span>
 							</div>
 
 
@@ -113,8 +114,15 @@ class Detailc extends Component{
 									<span className="timed">{item.datatime}</span>
 									<span className="lange">{item.lange}</span>
 									<span className="ticketPrice">{item.ticketPrice}</span>
-									<span className="ticket">选座购票</span>
-								</p>
+							
+                                     
+                                      	<span  key={item.id} className="ticket" onClick={()=>{
+									   this.props.history.push(`/Seat/${item.id}`)
+                                     }}>选座购票</span>
+                                
+								 </p>
+                                  
+                                 	  
 								<p className="two">  
 									<span className="end">{item.endtime}</span>
 		                             <span className="ads">{item.ads}</span>
@@ -124,7 +132,7 @@ class Detailc extends Component{
 							
 						)
 					}
-
+             }	
 			   </ul>
 						</div>
 						
@@ -142,6 +150,7 @@ class Detailc extends Component{
 			</div>
 			
 		)
+	
 	}
 	    hclick(){
 				this.setState({
