@@ -34,28 +34,32 @@ class Seat extends Component{
 					<li><img  src={love} /><span>情侣座</span></li>
 					</ul>
 				    </div>	
-	            <ul id="chang" onClick={
-						this.handclick.bind(this)
-					}>
+	            <ul id="chang">
 	                
-				           <li><i className="iconfont icon-zuowei"></i></li>
-				           <li><i className="iconfont icon-zuowei"></i></li>
-				           <li><i className="iconfont icon-zuowei"></i></li>
-				           <li><i className="iconfont icon-zuowei"></i></li>			      
-					       <li><i className="iconfont icon-zuowei"></i></li>
-				           <li><i className="iconfont icon-zuowei"></i></li>
+				           <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li>
+				           <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li>
+				           <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li>
+				           <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li>			      
+					       <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li>
+				           <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li>
 					       <li><img  src={mpic} /></li>
-					       <li><i className="iconfont icon-zuowei"></i></li>
-				           <li><i className="iconfont icon-zuowei"></i></li>
+					       <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li>
+				            <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li> <li><i className="iconfont icon-zuowei"></i></li>
 				           <li><img  src={mpic} /></li>
 				           <li><img  src={mpic} /></li>
-				           <li><i className="iconfont icon-zuowei"></i></li>
-				           <li><i className="iconfont icon-zuowei"></i></li>
-				           <li><i className="iconfont icon-zuowei"></i></li>
+				            <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li>
+				           <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li>
+				           <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li>
+				          <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li>			      
+					       <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li>
+				           <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li>
 				           <li><img  src={mpic} /></li>
-				           <li><i className="iconfont icon-zuowei"></i></li>
-				           <li><i className="iconfont icon-zuowei"></i></li>
-				           <li><i className="iconfont icon-zuowei"></i></li>
+				          <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li>
+				           <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li>
+				           <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li>
+				          <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li>			      
+					       <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li>
+				           <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li>
 
 					   
 					
@@ -67,6 +71,7 @@ class Seat extends Component{
           
             }
        handclick(ev){
+       	console.log(ev.target);
         ev.target.style.color="green";
 
        }
