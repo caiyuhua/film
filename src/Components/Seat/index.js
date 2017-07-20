@@ -27,40 +27,38 @@ class Seat extends Component{
 		return (
 			<div id="Seat">
 				<div id="seta">
-					<ul className="seat-intro" >
-					<li ><img  src={ke} /><span>可选</span></li>
-					<li><i className="iconfont icon-zuowei"></i><span>已选</span></li>
-					<li><img  src={mpic} /><span>已售</span></li>
-					<li><img  src={love} /><span>情侣座</span></li>
-					</ul>
+						<ul className="seat-intro" >
+						<li><p className="kexuan"></p><span>可选</span></li>
+						<li><p className="yixuan"></p><span>已选</span> </li>
+						<li><p className="yishou"></p><span>已售</span> </li>
+						<li><p className="love"></p><span>情侣座</span> </li>	
+						</ul>
 				    </div>	
 	            <ul id="chang">
 	                
-				           <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li>
-				           <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li>
-				           <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li>
-				           <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li>			      
-					       <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li>
-				           <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li>
-					       <li><img  src={mpic} /></li>
-					       <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li>
-				            <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li> <li><i className="iconfont icon-zuowei"></i></li>
-				           <li><img  src={mpic} /></li>
-				           <li><img  src={mpic} /></li>
-				            <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li>
-				           <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li>
-				           <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li>
-				          <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li>			      
-					       <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li>
-				           <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li>
-				           <li><img  src={mpic} /></li>
-				          <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li>
-				           <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li>
-				           <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li>
-				          <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li>			      
-					       <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li>
-				           <li onClick={this.handclick.bind(this)}><i className="iconfont icon-zuowei"></i></li>
-
+				         
+				           <li className="ke"  onClick={this.handclick.bind(this)}></li>
+                            <li className="yishou"></li>
+				           <li className="ke"  onClick={this.handclick.bind(this)}></li>
+				           <li className="ke"  onClick={this.handclick.bind(this)}></li>
+				           <li className="ke"  onClick={this.handclick.bind(this)}></li>
+				           <li className="ke"  onClick={this.handclick.bind(this)}></li>
+				           <li className="ke"  onClick={this.handclick.bind(this)}></li>
+				           <li className="ke"  onClick={this.handclick.bind(this)}></li>
+					         <li className="yishou"></li>
+					          <li className="ke"  onClick={this.handclick.bind(this)}></li>
+				           <li className="ke"  onClick={this.handclick.bind(this)}></li>
+				            <li className="ke"  onClick={this.handclick.bind(this)}></li>
+				           <li className="ke"  onClick={this.handclick.bind(this)}></li>
+				            <li className="yishou"></li>
+				            <li className="ke"  onClick={this.handclick.bind(this)}></li>
+				           <li className="ke"  onClick={this.handclick.bind(this)}></li>
+				           <li className="ke"  onClick={this.handclick.bind(this)}></li>
+				           <li className="ke"  onClick={this.handclick.bind(this)}></li>
+				           <li className="ke"  onClick={this.handclick.bind(this)}></li>
+				            <li className="yishou"></li>
+				             <li className="yishou"></li>
+				          
 					   
 					
 			   </ul> 
@@ -72,7 +70,7 @@ class Seat extends Component{
             }
        handclick(ev){
        	console.log(ev.target);
-        ev.target.style.color="green";
+        ev.target.style.backgroundColor="green";
 
        }
 
