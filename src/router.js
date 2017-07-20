@@ -19,6 +19,7 @@ import Notuse from "./Components/Notuse/index";
 import Obligation from "./Components/Obligation/index";
 import Completed from "./Components/Completed/index";
 import Coupon from "./Components/Coupon/index";
+import Seat from "./Components/Seat/index";
 import {Provider} from "react-redux";
 import store from "./Redux/Store/index";
 
@@ -61,9 +62,8 @@ const router = (
 				<Route path="/regist" component={Regist}/>
 				<Route path="/detailc/:cinemaID" component={Detailc}/>
 				<Route path="/detailm/:movieID" component={Detailm}/>
-				
+				<Route path="/seat/:seatID" component={Seat}/>
 				<Route path="/loginafter" render={()=>
-					
 					<LoginAfter>
 						<Switch>
 							<Route path="/loginafter/notuse" component={Notuse}/>
@@ -72,7 +72,7 @@ const router = (
 							<Route path="/loginafter/coupon" component={Coupon}/>
 							<Redirect from="/loginafter" to="/loginafter/notuse"/>
 						</Switch>
-					</LoginAfter>	
+					</LoginAfter>
 						
 				}/>
 				

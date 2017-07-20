@@ -116,8 +116,8 @@ class Detailc extends Component{
 									<span className="ticketPrice">{item.ticketPrice}</span>
 							
                                      
-                                      	<span  key={item.id} className="ticket" onClick={()=>{
-									   this.props.history.push(`/Seat/${item.id}`)
+                                    <span key={item.id} className="ticket" onClick={()=>{
+									   this.props.history.push(`/seat/${item.id}`)
                                      }}>选座购票</span>
                                 
 								 </p>
