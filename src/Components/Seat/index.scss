@@ -6,7 +6,6 @@ $ui-width: 750px;
 	#seta{
 
 	   font-size: 25px;
-	   margin-top: px2rem(10px);
 	   color: #555;
 		height:100%;
 		.seat-intro{
@@ -14,23 +13,35 @@ $ui-width: 750px;
 				line-height:px2rem(150px); 
 			    border-bottom: 2px solid #d54544;
             li{float: left;
-            margin-left:  px2rem(50px); 		    
-			 img{
-			 	margin-top: px2rem(50px); 
-			 }
-			.icon-zuowei{
+                   p{width:px2rem(50px);
+                   	display: inline-block;
+                    height:px2rem(50px);
+                    border:1px solid #ccc;
+                    margin-top:px2rem(60px); 
+                    margin-left:px2rem(10px);  
+                    border-top-left-radius:  px2rem(20px) px2rem(10px);
+                    border-top-right-radius: px2rem(20px) px2rem(10px);
 
-				color: green;
-				font-size: 60px;
-			}	
-			   span{
-			      
-                  margin-left: px2rem(10px);
-			     }			 
+                     }
+                     .yixuan{
+                     background:green;	
+                     }
+                     .yishou{
+                     	background:red;
+                     } 
+                     .love{
+                     	background:#ff9a97;
+                     }
+                    span{
+
+                    	margin-left:px2rem(15px);  
+                    } 
+                 }
+			   		 
 			  }
        }
 
-}
+
 	 
 
 .focus{
@@ -43,14 +54,19 @@ $ui-width: 750px;
 			li{
 					
 					float: left;
-					margin-left:  px2rem(20px); 
-				.icon-zuowei{
-                
-                 font-size: 60px;
-                
-
-				}	
+                    width:px2rem(50px);
+                    height:px2rem(50px);
+                    border:1px solid #ccc;
+                    border-top-left-radius:  px2rem(20px) px2rem(10px);
+                    border-top-right-radius: px2rem(20px) px2rem(10px);
+                    
+                    background:#fff;
+					margin-left:  px2rem(50px); 
+					margin-top: px2rem(50px);
+				
 	}
 			
-	  	
+	 .yishou{
+	 	background:red;
+	 } 	
 }
