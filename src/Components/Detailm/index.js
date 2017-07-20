@@ -24,7 +24,7 @@ class Detailm extends Component{
 		var id = JSON.parse(url.substring(10,13));
 
 		axios.get('data.json').then(res=>{
-			console.log(res.data.detail[id].actor.img1);
+			
 			this.setState({
 				detailmlist:res.data.detail[id],
 				actorlist:res.data.detail[id].actor

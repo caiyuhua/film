@@ -119,7 +119,7 @@ class LoginEmail extends Component{
 			}).then((data)=>{
 				console.log(data.msg);
 				if(data.code){
-					this.props.history.push('/longinafter');
+					this.props.history.push('/loginafter');
 				}else{
 					alert('请检查您的账号和密码')
 				}

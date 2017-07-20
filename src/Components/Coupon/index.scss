@@ -1,0 +1,34 @@
+$ui-width: 750px;
+	@function px2rem($px) {
+	    @return $px/$ui-width*7.5rem;
+	}
+
+#coupon{
+	width:100%;
+	height:px2rem(500px);
+	background:#fff;
+	text-align:center;
+	line-height:px2rem(500px);
+
+	.quan{
+		width:px2rem(350px);
+		height: px2rem(60px);
+		font-size: 24px;
+		text-indent: 2em;
+
+	}
+	input{
+		outline: none;
+		border:0px;
+
+		border:1px solid #ccc;
+	}
+	.submit{
+		height: px2rem(60px);
+		width:px2rem(100px);
+		margin-left:px2rem(10px);
+		border:0px;
+		border-bottom:3px solid #ddd;
+		font-size: 24px;
+	}
+}

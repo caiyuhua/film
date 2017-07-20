@@ -4,6 +4,9 @@ $ui-width: 750px;
 	}
 
 #loginAfter{
+	background:#f7f7f7;
+	width:100%;
+	height:100%;
 	padding-top:px2rem(30px);
 	font-size:26px;
 	.top{
@@ -23,6 +26,86 @@ $ui-width: 750px;
 			font-size: 50px;
 			margin-left: px2rem(20px);
 			float: left;
+		}
+	}
+
+
+	.order{
+		display: flex;
+		height: px2rem(80px);
+		line-height: px2rem(80px);
+
+		li{
+			flex: 1;
+			text-align: center;
+			color: #717171;
+			a{
+				display: block;
+				text-decoration: none;
+
+			}
+		}
+	}
+
+	footer{
+		
+		height:100%;
+		ul{
+			width: 100%;
+			height: 100%;
+			display: flex;
+
+			li{
+				flex: 1;
+				text-align: center;
+				margin:px2rem(30px) 0;
+				border-right:1px solid #ccc;
+				 &:visited{
+                            color:#3d3d3d;
+                            height:30px;
+                            text-decoration: none;
+                        }
+                &:link{
+                    color:#3d3d3d;                  
+                }
+			}
+
+			.lastli{
+				border-right:0px;
+			}
+		}
+
+		a{
+			text-decoration: none;
+		}
+
+
+
+		.nav{
+			padding: px2rem(30px) 0;
+			display: flex;
+			text-align: center;
+			margin-bottom:px2rem(30px);
+
+			div{
+				flex: 1;
+			}
+
+			.username h3{
+				text-align: right;
+				color:#999;
+			}
+
+			.tuichu a{
+				color: #e54847;
+			}
+
+			.city div{
+				width: 80%;
+				border: 1px solid #ccc;
+				padding:px2rem(10px) 0;
+				border-radius:10px;
+			}
 		}
 	}
 }

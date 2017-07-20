@@ -15,9 +15,14 @@ import Detailm from "./Components/Detailm/index";
 import LoginEmail from "./Components/LoginEmail/index";
 import LoginTel from "./Components/LoginTel/index";
 import LoginAfter from "./Components/LoginAfter/index";
-import {Provider} from "react-redux"
+import Notuse from "./Components/Notuse/index";
+import Obligation from "./Components/Obligation/index";
+import Completed from "./Components/Completed/index";
+import Coupon from "./Components/Coupon/index";
+import {Provider} from "react-redux";
 import store from "./Redux/Store/index";
-import Seat from "./Components/Seat/index";
+
+
 
 import {
 	HashRouter as Router,
@@ -51,13 +56,25 @@ const router = (
 							</Login>
 						}/>
 					</My>
-				}/>				
+				}/>
 				<Route path="/position" component={Position}/>
 				<Route path="/regist" component={Regist}/>
 				<Route path="/detailc/:cinemaID" component={Detailc}/>
 				<Route path="/detailm/:movieID" component={Detailm}/>
-                 <Route path="/Seat" component={Seat}/>	
-				<Route path="/longinafter" component={LoginAfter}/>
+				
+				<Route path="/loginafter" render={()=>
+					
+					<LoginAfter>
+						<Switch>
+							<Route path="/loginafter/notuse" component={Notuse}/>
+							<Route path="/loginafter/obligation" component={Obligation}/>
+							<Route path="/loginafter/completed" component={Completed}/>
+							<Route path="/loginafter/coupon" component={Coupon}/>
+							<Redirect from="/loginafter" to="/loginafter/notuse"/>
+						</Switch>
+					</LoginAfter>	
+						
+				}/>
 				
 				<Redirect from="/" to="/home"/>
 			</Switch>

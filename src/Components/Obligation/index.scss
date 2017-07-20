@@ -1,0 +1,12 @@
+$ui-width: 750px;
+	@function px2rem($px) {
+	    @return $px/$ui-width*7.5rem;
+	}
+
+#obligation{
+	width:100%;
+	height:px2rem(500px);
+	background:#fff;
+	line-height:px2rem(500px);
+	text-align:center;
+}
