@@ -17,7 +17,7 @@ import LoginTel from "./Components/LoginTel/index";
 import LoginAfter from "./Components/LoginAfter/index";
 import {Provider} from "react-redux"
 import store from "./Redux/Store/index";
-
+import Seat from "./Components/Seat/index";
 
 import {
 	HashRouter as Router,
@@ -56,6 +56,7 @@ const router = (
 				<Route path="/regist" component={Regist}/>
 				<Route path="/detailc/:cinemaID" component={Detailc}/>
 				<Route path="/detailm/:movieID" component={Detailm}/>
+                 <Route path="/Seat" component={Seat}/>	
 				<Route path="/longinafter" component={LoginAfter}/>
 				
 				<Redirect from="/" to="/home"/>
