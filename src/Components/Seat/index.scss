@@ -1,0 +1,56 @@
+$ui-width: 750px;
+	@function px2rem($px) {
+	    @return $px/$ui-width*7.5rem;
+	}
+
+	#seta{
+
+	   font-size: 25px;
+	   margin-top: px2rem(10px);
+	   color: #555;
+		height:100%;
+		.seat-intro{
+				height:px2rem(150px);
+				line-height:px2rem(150px); 
+			    border-bottom: 2px solid #d54544;
+            li{float: left;
+            margin-left:  px2rem(50px); 		    
+			 img{
+			 	margin-top: px2rem(50px); 
+			 }
+			.icon-zuowei{
+
+				color: green;
+				font-size: 60px;
+			}	
+			   span{
+			      
+                  margin-left: px2rem(10px);
+			     }			 
+			  }
+       }
+
+}
+	 
+
+.focus{
+	background:green;
+}
+
+#chang{                                         
+	height:px2rem(1350px);
+	  	background:#ccc;   
+			li{
+					
+					float: left;
+					margin-left:  px2rem(20px); 
+				.icon-zuowei{
+                
+                 font-size: 60px;
+                
+
+				}	
+	}
+			
+	  	
+}
