@@ -16,9 +16,7 @@ class LoginAfter extends Component{
 		return (
 			<div id="loginAfter">
 				<div className="top">
-					<div>
-						<NavLink to="/home/movie" activeClassName="selected"><i className="iconfont icon-back"></i></NavLink>
-					</div>
+					<div></div>
 					<div><h3 >我的订单</h3></div>
 					<div className="useradmin"></div>
 				</div>				

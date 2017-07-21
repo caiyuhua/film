@@ -38,9 +38,7 @@ class Detailm extends Component{
 
 			<div id="detailm">
 				<div className="top">
-					<div>
-						<NavLink to="/home/movie" activeClassName="selected"><i className="iconfont icon-back"></i></NavLink>
-					</div>
+					<div></div>
 					<div><h3 >悟空传</h3></div>
 					<div></div>
 				</div>	
