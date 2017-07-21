@@ -64,6 +64,7 @@ const router = (
 				<Route path="/detailm/:movieID" component={Detailm}/>
 				<Route path="/seat/:seatID" component={Seat}/>
 				<Route path="/loginafter" render={()=>
+					
 					<LoginAfter>
 						<Switch>
 							<Route path="/loginafter/notuse" component={Notuse}/>
@@ -72,7 +73,7 @@ const router = (
 							<Route path="/loginafter/coupon" component={Coupon}/>
 							<Redirect from="/loginafter" to="/loginafter/notuse"/>
 						</Switch>
-					</LoginAfter>
+					</LoginAfter>	
 						
 				}/>
 				

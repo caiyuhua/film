@@ -44,8 +44,9 @@ class LoginAfter extends Component{
 						<div className="tuichu"><NavLink to="/my/login/loginemail" activeClassName="myselected">退出</NavLink></div>
 						<div className="city"><div>城市:大连</div></div>
 					</div>
-
-
+					<p className="friendLink"><span>友情链接:</span><span className="meituan red">猫眼专业版</span><span className="red">美团网</span></p>
+					<p className="friendLink"><span>© 猫眼电影 客服电话: </span><span className="red">1010-5335</span></p>
+					<p className="company">京ICP备16022489号-1 京公网安备11010502030881号</p>
 				</footer>
 			</div>
 		)

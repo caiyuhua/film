@@ -67,7 +67,7 @@ class Movie extends Component{
 
 
 	handleLoadMore(){
-		console.log('请求数据')
+		console.log('请求数据');
 
 
 	}
