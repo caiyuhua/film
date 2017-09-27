@@ -1,0 +1,96 @@
+$ui-width: 750px;
+	@function px2rem($px) {
+	    @return $px/$ui-width*7.5rem;
+	}
+	
+#article{
+	div{
+		display: flex;
+
+	}
+   font-size: 40px;
+   color: #333;
+   margin-top: px2rem(70px);
+   p{
+   	font-size: 30px;
+   	padding-top: px2rem(30px);
+   }
+   i{
+   	float:right;
+   	color: green;
+    width: px2rem(90px);
+    height: px2rem(60px);
+   line-height: px2rem(60px);
+    border-left:3px solid #ccc;
+   	font-size: 40px;
+   	padding-left:px2rem(30px);
+   }
+   #slide{
+    width:100%;
+    background:#666;
+    height:px2rem(330px);
+   
+      .swiper-container {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+     }
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+        border:3px solid #fff;
+
+    }
+      
+   }
+   .slideTitle{
+   height:px2rem(20px);
+
+
+   }
+   #dtime{
+      padding-left:px2rem(50px);
+      border-bottom:2px solid #ccc;
+      color: #aaa;
+
+   }
+   #times{
+   	font-size: 20px;
+    .timedata{
+       height:px2rem(200px);
+       border-bottom: 1px solid #ccc;
+         padding-left:px2rem(30px); 
+       .lange{
+            margin-left:px2rem(30px); 
+        }
+        .ticketPrice{
+          margin-left: px2rem(140px);
+          color: #e54847;
+        
+        }
+        .ticket{
+          margin-right:px2rem(10px); 
+           margin-top:px2rem(20px); 
+           color:#FA5939; 
+           border: 2px solid #FA5939;
+           float: right;
+  
+        }
+        .two{
+          font-size: 20px;
+          color: #aaa;
+           .ads{
+            margin-left:px2rem(10px);  
+           } 
+           .discount{
+             margin-left:px2rem(20px);
+           }
+        }
+
+      } 
+
+
+   }
+}

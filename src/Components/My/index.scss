@@ -1,0 +1,31 @@
+
+#admin{
+	position:fixed;
+	z-index:100;
+	width:100%;
+	.my{
+		border-radius: 50%;
+		background-color: #fff;
+		line-height:px2rem(300px); 
+		
+		bottom: px2rem(100px);
+		right: px2rem(50px);
+		z-index: 10;
+		text-align: center;
+		font-size: 25px;
+		a{
+			text-decoration: none;
+			color:#e54847;
+		}
+
+		.icon-account{
+			color: red;
+			display: block;
+			font-size: 25px;
+			margin-top:10px;
+		}
+
+	}
+
+}
+

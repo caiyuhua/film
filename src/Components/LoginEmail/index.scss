@@ -1,0 +1,82 @@
+$ui-width: 750px;
+	@function px2rem($px) {
+	    @return $px/$ui-width*7.5rem;
+	}
+
+#loginemail{
+	font-size:30px;
+	text-align:center;
+	background:#f8f8f8;
+
+	.backgroundWh{
+		background:#fff;
+	}
+
+	.userMsg{
+		width: 80%;
+		margin:0 auto;
+		padding:0 px2rem(30px);
+		background:#fff;
+
+		.msgIn{
+			text-align: left;
+			width: 100%;
+			height:px2rem(100px);
+			border-bottom: 1px solid #ccc;
+
+			input{
+				height: 100%;
+				outline: none;
+				border:0;
+				font-size: 26px;
+			}
+		}
+	}
+
+
+
+		button{
+			display: inline-block;
+			margin-top: px2rem(30px);
+			background: rgb(223, 45, 45);
+			border-radius:10px;
+			width: 90%;
+			height: px2rem(80px);
+			font-size: 30px;
+			color: #fff;
+		}
+
+		.submit{
+
+			.regNow{
+				margin-top: px2rem(30px);
+				text-decoration: none;
+				font-size: 23px;
+				color: #df2d2d;							
+			}
+			p{
+				font-size: 26px;
+			}
+			span{
+				color: #df2d2d
+			}
+
+			div{
+					height: px2rem(70px);
+				}
+
+			.left{
+				float: left;
+				margin-left: px2rem(60px);
+			}
+			.right{
+				float: right;
+				margin-right: px2rem(60px);
+			}
+
+			.telphone{
+				padding:px2rem(30px) 0;
+			}
+		}
+
+}

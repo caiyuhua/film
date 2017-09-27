@@ -1,0 +1,84 @@
+$ui-width: 750px;
+	@function px2rem($px) {
+	    @return $px/$ui-width*7.5rem;
+	}
+.show{
+	color:red;
+}
+.hide{
+	color:#3e3e3e;
+}
+#regist{
+	width:100%;
+	height:px2rem(60px);
+	background:#fff;
+	
+	ul{
+		width:100%;
+		margin:0 auto;
+		height:px2rem(60px);
+		margin-top: px2rem(70px);
+		margin-bottom: px2rem(40px);
+		border-bottom:1px solid #ccc;
+		
+		li{ 
+			list-style: none;
+			font-size:25px;
+			float:left;
+			padding-left: px2rem(60px);
+			
+		}
+	}
+
+	
+}
+#tel{
+		width:100%;
+		margin-top: px2rem(60px);
+		height:px2rem(70px);
+		background:#fff;
+		display: flex;
+		justify-content: center;
+		input{
+			width:80%;
+			font-size: 30px;
+			border: none;
+			
+
+		}
+		#ps{
+			display: none;
+		}
+	}
+
+#ck{
+	width:px2rem(30px);
+	height:px2rem(30px);
+	background:red;
+}
+#pp{display:inline-block;font-size:30px;}
+
+#btn{
+	width:100%;
+	height:px2rem(60px);
+	font-size:30px;
+
+}
+#yanzheng{
+	font-size:20px;
+	color:red;
+	opacity:0;
+}
+#send{
+	width:100%;
+	height:px2rem(60px);
+	font-size:30px;
+	display:none;
+
+}
+#zh{
+	font-size:20px;
+	color:red;
+	opacity:0;
+	margin-bottom:px2rem(10px);
+}

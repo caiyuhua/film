@@ -1,0 +1,83 @@
+$ui-width: 750px;
+	@function px2rem($px) {
+	    @return $px/$ui-width*7.5rem;
+	}
+	
+#movie{
+		width:100%;
+		font-size:22px;
+		font-weight: 100;
+		
+
+	ul.playing{
+		display:flex;
+		flex-direction: column;
+		width: 98%;
+		margin:10px auto;
+		color: #666;
+
+		li{
+			flex: 1;
+			border-bottom: 1px solid #ccc;
+			padding: 10px 0;
+			position: relative;
+
+			img{
+				float: left;
+				width: 130px;
+			}
+
+			.buy{
+				margin-left:10px;
+				div{
+					margin:5px 0;
+				}
+			}
+
+		}
+
+		h3{
+			font-size:28px;
+			font-weight: 100;
+			color: #222
+		}
+
+
+		.btn{
+			width: 30%;
+			float: right;			
+			height: 100%;
+			a{
+				position:absolute;
+				height: 100%;
+				text-align: center;
+				float: right;
+				width: px2rem(90px);
+				height: px2rem(50px);
+				line-height:px2rem(50px);
+				color: #fff;
+				background:#EF4238;
+				border-radius: 5px;
+				bottom: px2rem(30px);
+				right: 0;
+				margin-right:px2rem(50px);
+			}
+
+			div{
+				margin-top: px2rem(10px);
+				float: right;
+				margin-right:px2rem(50px);
+				color: #FFB400;
+				font-size: 26px;
+			}
+		}
+
+	}
+
+
+	.left{
+		float: left;
+	}
+
+}
+

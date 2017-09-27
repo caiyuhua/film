@@ -1,0 +1,72 @@
+$ui-width: 750px;
+	@function px2rem($px) {
+	    @return $px/$ui-width*7.5rem;
+	}
+
+	#seta{
+
+	   font-size: 25px;
+	   color: #555;
+		height:100%;
+		.seat-intro{
+				height:px2rem(150px);
+				line-height:px2rem(150px); 
+			    border-bottom: 2px solid #d54544;
+            li{float: left;
+                   p{width:px2rem(50px);
+                   	display: inline-block;
+                    height:px2rem(50px);
+                    border:1px solid #ccc;
+                    margin-top:px2rem(60px); 
+                    margin-left:px2rem(10px);  
+                    border-top-left-radius:  px2rem(20px) px2rem(10px);
+                    border-top-right-radius: px2rem(20px) px2rem(10px);
+
+                     }
+                     .yixuan{
+                     background:green;	
+                     }
+                     .yishou{
+                     	background:red;
+                     } 
+                     .love{
+                     	background:#ff9a97;
+                     }
+                    span{
+
+                    	margin-left:px2rem(15px);  
+                    } 
+                 }
+			   		 
+			  }
+       }
+
+
+	 
+
+.focus{
+	background:green;
+}
+
+#chang{                                         
+	height:px2rem(1350px);
+	  	background:#ccc;   
+			li{
+					
+					float: left;
+                    width:px2rem(50px);
+                    height:px2rem(50px);
+                    border:1px solid #ccc;
+                    border-top-left-radius:  px2rem(20px) px2rem(10px);
+                    border-top-right-radius: px2rem(20px) px2rem(10px);
+                    
+                    background:#fff;
+					margin-left:  px2rem(50px); 
+					margin-top: px2rem(50px);
+				
+	}
+			
+	 .yishou{
+	 	background:red;
+	 } 	
+}

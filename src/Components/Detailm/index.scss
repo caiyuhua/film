@@ -1,0 +1,160 @@
+$ui-width: 750px;
+	@function px2rem($px) {
+	    @return $px/$ui-width*7.5rem;
+	}
+
+#detailm{
+	padding-top:px2rem(40px);
+	font-size:23px;
+	text-align:center;
+
+	.icon-moreunfold{
+		color: #000;
+	}
+	
+	.top{
+		width: 100%;
+		height: px2rem(100px);
+		display: flex;
+		line-height:px2rem(100px);
+		background:#f7f7f7;
+		color: #999;
+
+		div{
+			flex: 1;
+			text-align: center;
+		}
+
+		.icon-back{
+			font-size: 50px;
+			margin-left: px2rem(20px);
+			float: left;
+			color: #999;
+
+		}
+	}
+
+
+	.head{
+		// width: 100%;
+		margin: 0 auto;
+		height: px2rem(290px);
+		background: #40454d;
+		padding: px2rem(30px) px2rem(20px);
+		color: #fff;
+		.right{
+			width: 68%;
+			float: right;
+			text-align: left;
+			h3{
+				font-weight:100;
+				font-size:28px;
+			}
+		}
+		img{
+			border:2px solid #fff;
+			float: left;
+		}
+	}
+
+	.btnBuy{
+		display: inline-block;
+		width: 90%;
+		height: px2rem(90px);
+		background:#e54847;
+		border-radius:10px;
+		color: #fff;
+		margin-top: px2rem(30px);
+		line-height: px2rem(90px);
+		text-align: center;
+		a{
+			color: #fff;
+			font-size: 30px;
+
+		}
+	}
+
+	.miaoshu1{
+
+		margin-top: px2rem(20px);
+		height: px2rem(98px);
+		overflow: hidden;
+		
+		p{
+
+			display: inline-block;
+			font-size: 22px;
+			text-indent: 2em;
+			text-align: left;
+			// width: 90%;
+		}
+		
+	}
+
+
+
+	.miaoshu2{
+
+		margin-top: px2rem(20px);
+		height: px2rem(198px);
+		overflow: hidden;
+		
+		p{
+
+			display: inline-block;
+			font-size: 22px;
+			text-indent: 2em;
+			text-align: left;
+			// width: 90%;
+		}
+		
+	}
+
+
+	.move{
+		width:100%;
+		
+		color: #999;
+		z-index: 1;
+		.iconfont{
+			font-size: 50px;
+		}
+	}
+
+	ul{
+		
+		height: px2rem(250px);
+		li{ 		
+			overflow: hidden;
+			height: px2rem(250px);
+		}
+
+		div{
+			
+			display: inline-block;	
+		}
+
+		img{
+			padding:0 px2rem(10px)
+		}
+	}
+
+	.actor{
+		.allactor{
+			width: 100%;
+			height:px2rem(70px);
+			line-height:px2rem(70px);
+			color: #000;
+			border-top:1px solid #ccc;
+			border-bottom:1px solid #ccc;
+			text-align:center;
+			margin-top: px2rem(30px);
+			text-align: left;
+			color: #666;
+			font-size: 30px;
+			text-indent: 2em;
+		}
+	}
+
+	
+}
